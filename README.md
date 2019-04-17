@@ -1,1 +1,0 @@
-# CUAgainstKennedy.github.io
