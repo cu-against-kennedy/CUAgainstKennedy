@@ -1,0 +1,56 @@
+<div class="home-splash-container">
+  <div class="title-splash">
+    <div [@Wow] class="Mark">CU deserves:</div>
+    <div [@list] class="main-statements-container">
+      <div [@statements] (@statements.done)="upperAnimDone = true" class="statement" *ngFor="let st of preppedText; index as i">
+        <span class="stat" *ngIf="i != finalStat" [ngStyle]="{'opacity': (.3 + .2*i)}">{{st}}</span>
+        <span class="stat" *ngIf="i == finalStat" [ngStyle]="{'color': '#FF0000', opacity: .7, 'font-size': '1.3em'}">{{st}}</span>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="upperAnimDone" [@simpleFadeAnimation] class="arrowDown">
+    <img (click)="scrollToElement(whoRegent)" src="../../assets/ArrowDown.png" class="arrowDown_img" >
+  </div>
+</div>
+
+<div class="callBanner">
+  <h1 class="callBannerHead">Open Forum Demonstration</h1>
+  <h3 class="callBannerThird">Mark Kennedy is visiting the Boulder campus - we are showing that he does not represent us.</h3>
+  <br>
+  <h2 class="callBannerSecondary">Friday, April 26 | 10-11:15 a.m. </h2>
+  <h2 class="callBannerSecondary">Macky Auditorium</h2>
+  <br>
+  <h2 class="callBannerCritical">You have legal protections if you participate in the protest; lawyers will be present to ensure your 1st Amendment Rights are protected!</h2>
+</div>
+
+<div #whoRegent class="who-regent">
+  <h1 class="IntroHeader">The University of Colorado was <span style="color: red">cheated</span> and <span style="color: red">silenced.</span></h1>
+  <div class="mainLanguage">
+    <img class="RegentImage" src="../../assets/RegentPic.jpg" matTooltip="Credit to Grand Forks Herald">
+    <p class="RegentText">On April 10, after several months of a non-transparent and exclusive process, the Board of Regents of the University of Colorado unanimously chose Mark Kennedy as their nominee for president of the University of Colorado system. This process was tainted from the start, and represented a systematic effort to silence student voice. A single student, who was nominated by leaders at every CU school, was rejected, and a student from UCCS who was not nominated by anyone was selected instead. CU Regent Linda Shoemaker has said that "we didn’t even have the opportunity for our own staff to do the vetting" and "We need the press and the public to do the job of vetting him." <br><br> We have done the job of vetting (it took a 5 minute Google search), and it is obvious this candidate is flawed and unfit to lead the University of Colorado. </p>
+  </div>
+</div>
+
+<div #whoIs class="who-is">
+  <h1 class="IntroHeader">Who is Mark Kennedy?</h1>
+  <div class="mainLanguage">
+    <img class="KennedyImage" src="../../assets/KennedyPhoto.jpg" matTooltip="Credit to Grand Forks Herald">
+    <p class="KennedyText">Mark Kennedy is a business person turned politician, who has used every job he’s held to climb further up the conservative ladder. Since 2016, he’s served as the president of the University of North Dakota, where students, faculty, staff, and community members alike have characterized his presidency as one of the worst in school history. He was rejected for the presidency at the University of Central Florida in 2018 because of his divisive views, poor management practices, and lack of experience. Kennedy is now the sole nominee to be President of the University of Colorado. The Board of Regents at the University of Colorado should reject his nomination for president too. They should engage members of the CU community in a true search for an experienced and qualified leader who will better represent our school’s mission and guiding principles.</p>
+  </div>
+</div>
+
+<div #whyMad class="whyMad">
+  <h1 class="IntroHeader">A flawed candidate from a flawed process</h1>
+  <div class="mainLanguage">
+    <div *ngFor="let why of whyText" class="whyUnit">
+      <span class="whyNum" *ngIf="why.percent">{{why.number}}%</span>
+      <span class="whyNum" *ngIf="!why.percent">{{why.number}}</span>
+      <br>
+      <span class="whyText">{{why.text}}</span>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+<!--[@simpleFadeAnimation]="'in'"-->
