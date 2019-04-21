@@ -1,0 +1,40 @@
+<div class="whatYouCanDoContainer">
+  <h1 class="titleStep">Here's how you can help.</h1>
+  <h1 class="stepNumber">1</h1>
+  <h2 class="stepHead">Contact <span style="color: red">your</span> regents <br> (and tell them you vote)</h2><br>
+  <div class="viewRegentContainer" *ngIf="smallScreen">
+    <button class="viewRegentButton" mat-stroked-button (click)="viewRegents = !viewRegents">View Regents <mat-icon>{{viewRegents ? 'arrow_drop_up' : 'arrow_drop_down'}}</mat-icon> </button>
+  </div>
+  <div class="regentContainer" *ngIf="viewRegents">
+    <div class="regent" *ngFor="let regent of regentInfo">
+      <img class="regentPic" src="../../assets/Regents/{{regent.image}}.jpg" alt="Regent Sue Sharkey">
+      <h3 class="regentName">{{regent.name}}</h3>
+      <h3 class="regentPosition">{{regent.position}}</h3>
+      <h3 class="regentTerm">{{regent.term}}</h3>
+      <h3 class="regentEmail">Email: <a href="mailto:{{regent.email}}">{{regent.email}}</a></h3>
+      <h3 class="regentPhone">Phone: {{regent.phone}}</h3>
+    </div>
+  </div>
+  <h1 class="stepNumber">2</h1>
+  <h2 class="stepHead">Sign your name</h2>
+  <div class="petitionContainer">
+    <div class="SSF">
+      <h3>Student, Staff, and Faculty</h3>
+      <a [color]="'success'" routerLink="/WhatYouCanDo" class="SSF_button" mat-stroked-button>Sign Petition</a>
+    </div>
+    <div class="AD">
+      <h3>Alumni and Donors</h3>
+      <a [color]="'success'" routerLink="/WhatYouCanDo" class="AD_button" mat-stroked-button>Sign Petition</a>
+    </div>
+  </div>
+  <h1 class="stepNumber">3</h1>
+  <h2 class="stepHead">Attend a Demonstration or Event</h2>
+  <div class="demContainer">
+    <div class="demonstration" *ngFor="let dem of demArr">
+      <h3 class="Name">{{dem.name}}</h3>
+      <h4 class="Time">{{dem.time}}</h4>
+      <h4 class="Location">{{dem.location}}</h4>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

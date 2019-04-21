@@ -1,0 +1,276 @@
+.home-splash-container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  cursor: default;
+  flex-direction: column;
+
+  .title-splash {
+    position: absolute;
+    top: 30%;
+    padding: 0 32px 0 32px;
+    color: white;
+    font-weight: bold;
+    font-size: 2.7em;
+    font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+    .Mark {
+      color: #CFB87C;
+      font-size: 1.7em;
+      letter-spacing: 3px;
+    }
+    .main-statements-container {
+      display: flex;
+      flex-direction: column;
+      .statement {
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .arrowDown {
+    position: absolute;
+    bottom: 64px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    transition: ease-in-out 400ms;
+    &:hover {
+      transform: translateY(10px) scale(1.08);
+
+      transition: ease-in-out 400ms;
+    }
+  }
+}
+
+.callBanner {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em 2em 1em;
+  color: black;
+  text-align: center;
+  .callBannerHead {
+    font-size: 3em;
+    font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+  }
+  .callBannerSecondary {
+    font-size: 2em;
+    font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+  }
+  .callBannerThird {
+    font-size: 1.5em;
+    font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+  }
+  .callBannerCritical {
+    font-size: 1.8em;
+    font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+    font-weight: bold;
+  }
+}
+
+.who-regent {
+  .IntroHeader {
+    font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 1.2em 0 1em 0;
+  }
+  .mainLanguage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .RegentImage {
+      width: 30%;
+      max-width: 500px;
+      height: 30%;
+      border-radius: 50%;
+      margin-left: 2em;
+      margin-right: 60px;
+      margin-bottom: 2em;
+    }
+    .RegentText {
+      width: 60%;
+      font-size: 1.8em;
+      font-family: "helvetica neue", sans-serif;
+    }
+  }
+}
+
+.who-is {
+  height: 100%;
+
+  .IntroHeader {
+    font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 1.9em 0 1.5em 0;
+  }
+  .mainLanguage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .KennedyImage {
+      width: 30%;
+      max-width: 500px;
+      height: 30%;
+      border-radius: 50%;
+      margin-right: 60px;
+      margin-left: 2em;
+      margin-bottom: 2em;
+    }
+    .KennedyText {
+      width: 60%;
+      font-size: 1.8em;
+      font-family: "helvetica neue", sans-serif;
+    }
+  }
+}
+
+.whyMad {
+  padding-bottom: 4em;
+  .IntroHeader {
+    font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 1.9em 0 .5em 0;
+  }
+  .mainLanguage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .whyUnit {
+      width: 25%;
+      padding: 1.5% 3% 1.5% 3%;
+      .whyNum {
+        font-family: "HelveticaNeue-CondensedBold", "helvetica neue", sans-serif;
+        font-size: 3em;
+        color: #CFB87C;
+      }
+      .whyText {
+        font-family: "helvetica neue", sans-serif;
+        font-size: 1.6em;
+        text-align: center;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1345px) {
+  .who-is .mainLanguage .KennedyText {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .who-is .mainLanguage .KennedyText {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 967px) {
+  .home-splash-container .title-splash {
+    font-size: 3em;
+    .Mark {
+      font-size: 1.7em;
+    }
+  }
+}
+
+@media only screen and (max-width: 933px) {
+  .who-is .mainLanguage .KennedyImage {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .whyMad {
+    .IntroHeader {
+      //font-size: 2em;
+    }
+    .mainLanguage {
+      .whyUnit {
+        width: 35%;
+        padding: 4% 1.5% 4% 1.5%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-splash-container {
+    top: 300px;
+    .title-splash {
+      font-size: 2em;
+      .Mark {
+        font-size: 1.2em;
+      }
+      .main-statements-container {
+        .statement {
+          padding: 10px 0 0 0;
+        }
+      }
+    }
+  }
+  .who-is .mainLanguage {
+    flex-direction: column;
+    align-items: center;
+    .KennedyImage {
+      padding-bottom: 1em;
+    }
+    .KennedyText {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .whyMad {
+    .mainLanguage {
+      .whyUnit {
+        width: 75%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .home-splash-container {
+    .title-splash {
+      top: 30%;
+      font-size: 2.2em;
+      .Mark {
+        font-size: 1.3em;
+      }
+    }
+    .arrowDown {
+      bottom: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .home-splash-container {
+    top: 300px;
+    .title-splash {
+      font-size: 2em;
+      .Mark {
+        font-size: 1.2em;
+      }
+      .main-statements-container {
+        .statement {
+          padding: 10px 0 0 0;
+        }
+      }
+    }
+  }
+
+
+}
