@@ -1,15 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { state, transition, animate, style, trigger, query, stagger, animateChild } from '@angular/animations';
 
-import { Pipe, PipeTransform } from '@angular/core';
-
-@Pipe({ name: 'reverse' })
-export class ReversePipe implements PipeTransform {
-  transform(value) {
-    return value.slice().reverse();
-  }
-}
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

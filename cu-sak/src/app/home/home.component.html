@@ -6,7 +6,6 @@
         <span class="stat" *ngIf="i != finalStat" [ngStyle]="{'opacity': (.3 + .2*i)}">{{st}}</span>
         <span class="stat" *ngIf="i == finalStat" [ngStyle]="{'color': '#FF0000', opacity: .7, 'font-size': '1.3em'}">{{st}}</span>
       </div>
-      <span>{{st}}</span>
     </div>
   </div>
   <div *ngIf="upperAnimDone" [@simpleFadeAnimation] class="arrowDown">
