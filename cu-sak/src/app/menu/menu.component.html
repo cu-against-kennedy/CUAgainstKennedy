@@ -1,7 +1,7 @@
 <div class="menuBig" *ngIf="!smallScreen" [@menuMovement]="menuStatus" (@menuMovement.start)="menuAnimStart($event)" (@menuMovement.done)="menuAnimDone($event)"  [ngStyle]="{'height': menuStatus == 'down' ? '100px' : '0px'}">
   <div  class="menu" *ngIf="viewMenuItems">
     <div class="logo">
-      <a routerLink="/Home"><img style="height: 100px; width: auto; cursor: pointer;" src="../../assets/CUAK_LOGO.png"></a>
+      <a routerLink="/Home"><img style="height: 100px; width: auto; cursor: pointer;" src="../../assets/CUAK_Logo.png"></a>
     </div>
     <div class="actionArr">
       <div  *ngFor="let action of actionArray">
@@ -15,7 +15,7 @@
 <div class="menuSmall" *ngIf="smallScreen" [ngStyle]="{'height': heightString}">
   <div class="menu-bar" >
     <div class="logo">
-      <a routerLink="/Home"><img style="height: 100px; width: auto;  cursor: pointer;" src="../../assets/CUAK_LOGO.png"></a>
+      <a routerLink="/Home"><img style="height: 100px; width: auto;  cursor: pointer;" src="../../assets/CUAK_Logo.png"></a>
     </div>
     <div class="menu-button">
       <mat-icon [@simpleFadeAnimation]="'in'" (click)="handleOpenMenuClick()" *ngIf="menuClosed">menu</mat-icon>
