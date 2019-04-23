@@ -75,7 +75,7 @@ export class MenuComponent implements OnInit {
   previousScrollY: number = undefined;
   @HostListener('window:scroll', [])
   onScroll(): void {
-    if ( this.previousScrollY > window.scrollY ) {
+    if ( this.previousScrollY > window.scrollY || window.scrollY == 0 ) {
       this.menuStatus = 'down';
     }
     else {
