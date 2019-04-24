@@ -20,7 +20,7 @@
   <div class="petitionContainer">
     <div class="SSF">
       <h3>Student, Staff, and Faculty</h3>
-      <a [color]="'success'" routerLink="/WhatYouCanDo" class="SSF_button" mat-stroked-button>Sign Petition</a>
+      <a disabled="true" routerLink="/WhatYouCanDo" class="SSF_button" mat-stroked-button>Sign Petition</a>
     </div>
     <div class="AD">
       <h3>Alumni and Donors</h3>
@@ -34,6 +34,7 @@
       <h3 class="Name">{{dem.name}}</h3>
       <h4 class="Time">{{dem.time}}</h4>
       <h4 class="Location">{{dem.location}}</h4>
+      <h4 class="Address">{{dem.address}}</h4>
     </div>
   </div>
   <app-footer></app-footer>

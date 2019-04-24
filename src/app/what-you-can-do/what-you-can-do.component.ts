@@ -86,29 +86,35 @@ export class WhatYouCanDoComponent implements OnInit {
     {
       name: 'CU System Administration/CU Foundation',
       time: 'Monday, April 22 — 3:15 - 4:15 p.m.',
-      location: 'Warwick Hotel, Capitol Ballroom'
+      location: 'Warwick Hotel, Capitol Ballroom',
+      address: ''
+
     },
     {
       name: 'UCCS',
       time: 'Tuesday, April 23 — 1:30 - 2:30 p.m.',
-      location: 'University Hall, Room 180'
+      location: 'University Center, Room 116',
+        address: '1420 Austin Bluffs Parkway, Colorado Springs'
     },
     {
       name: ' Anschutz Medical Campus',
       time: 'Wednesday, April 24 — 3:30 - 4:30 p.m.',
-      location: 'Education 2 North, Room 1102'
+      location: 'Education 2 South, Room 1102',
+        address: '13120 E. 19th Ave., Aurora'
     },
     {
       name: 'CU Denver',
-      time: 'Thursday, April 25 — 3:00 - 4:00 p.m.',
-      location: 'Student Commons, Room 2600'
+      time: 'Thursday, April 25 — 3 - 4 p.m.',
+      location: 'Lola & Rob Salazar Student Wellness Center',
+        address: '1355 12th St., Denver'
     },
     {
       name: 'CU Boulder',
       time: 'Friday, April 26 — 10:15 - 11:15 a.m.',
-      location: ' Macky Auditorium'
+      location: ' Macky Auditorium',
+        address: '1595 Pleasant St., Boulder'
     }
-  ]
+  ];
   constructor() { }
   ngOnInit() {
     this.handleScreenSize(window.innerWidth);
