@@ -117,7 +117,7 @@ export class WhatYouCanDoComponent implements OnInit {
       time: 'Friday, April 26 — 10:15 - 11:15 a.m.',
       location: ' Macky Auditorium',
         address: '1595 Pleasant St., Boulder',
-        link: 'https://livestream.com/accounts/26266469/events/8634905'
+        link: 'https://www.youtube.com/watch?v=t0HzcPUW_4g'
     }
   ];
   constructor() { }

@@ -28,20 +28,17 @@
     </div>
   </div>
   <h1 class="stepNumber">3</h1>
-  <h2 class="stepHead">Attend a Demonstration or Event</h2>
-  <div class="demContainer">
-    <div class="demonstration" *ngFor="let dem of demArr">
-      <h3 class="Name">{{dem.name}}</h3>
-      <h4 class="Time">{{dem.time}}</h4>
-      <h4 class="Location">{{dem.location}}</h4>
-      <h4 class="Address">{{dem.address}}</h4>
-      <a [color]="'success'" href="{{dem.link}}" class="watchButton AD_button" mat-stroked-button>Watch now</a>
-    </div>
-  </div>
-  <h1 class="stepNumber">4</h1>
   <h2 class="stepHead">Provide your honest feedback to the Regents</h2>
   <div class="feedbackContainer">
     <a [color]="'success'" href="https://www.cu.edu/presidential-search/forms/cu-presidential-search-feedback" class="AD_button" mat-stroked-button>Provide Feedback</a>
+  </div>
+  <h1 class="stepNumber">4</h1>
+  <h2 class="stepHead">Watch his open forum events</h2>
+  <div class="demContainer">
+    <div class="demonstration" *ngFor="let dem of demArr">
+      <h3 class="Name">{{dem.name}}</h3>
+      <a [color]="'success'" href="{{dem.link}}" class="watchButton AD_button" mat-stroked-button>Watch now</a>
+    </div>
   </div>
   <app-footer></app-footer>
 </div>
