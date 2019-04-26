@@ -87,32 +87,37 @@ export class WhatYouCanDoComponent implements OnInit {
       name: 'CU System Administration/CU Foundation',
       time: 'Monday, April 22 — 3:15 - 4:15 p.m.',
       location: 'Warwick Hotel, Capitol Ballroom',
-      address: ''
+      address: '',
+        link: 'https://www.facebook.com/UniversityofColoradosystem/'
 
     },
     {
       name: 'UCCS',
       time: 'Tuesday, April 23 — 1:30 - 2:30 p.m.',
       location: 'University Center, Room 116',
-        address: '1420 Austin Bluffs Parkway, Colorado Springs'
+        address: '1420 Austin Bluffs Parkway, Colorado Springs',
+        link: 'https://www.youtube.com/watch?v=_E6_a6ZzyUc&feature=youtu.be'
     },
     {
       name: ' Anschutz Medical Campus',
       time: 'Wednesday, April 24 — 3:30 - 4:30 p.m.',
       location: 'Education 2 South, Room 1102',
-        address: '13120 E. 19th Ave., Aurora'
+        address: '13120 E. 19th Ave., Aurora',
+        link: 'https://www.youtube.com/watch?v=6me7kgv9eDU'
     },
     {
       name: 'CU Denver',
       time: 'Thursday, April 25 — 3 - 4 p.m.',
       location: 'Lola & Rob Salazar Student Wellness Center',
-        address: '1355 12th St., Denver'
+        address: '1355 12th St., Denver',
+        link: 'https://www.facebook.com/dailycamera/videos/vb.58810241190/433292440764383/?type=2&theater'
     },
     {
       name: 'CU Boulder',
       time: 'Friday, April 26 — 10:15 - 11:15 a.m.',
       location: ' Macky Auditorium',
-        address: '1595 Pleasant St., Boulder'
+        address: '1595 Pleasant St., Boulder',
+        link: 'https://livestream.com/accounts/26266469/events/8634905'
     }
   ];
   constructor() { }
